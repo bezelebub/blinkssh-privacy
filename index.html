@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <title>BlinkSSH Privacy Policy</title>
+  <style>
+    :root {
+      color-scheme: light dark;
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.6;
+    }
+    body {
+      margin: 0;
+      background: #f7f8ff;
+      color: #1a1b20;
+    }
+    main {
+      box-sizing: border-box;
+      max-width: 760px;
+      margin: 0 auto;
+      padding: 48px 24px 72px;
+    }
+    h1, h2 {
+      line-height: 1.2;
+    }
+    h1 {
+      margin-bottom: 8px;
+      font-size: clamp(2rem, 6vw, 3.25rem);
+    }
+    h2 {
+      margin-top: 36px;
+    }
+    .summary {
+      padding: 20px;
+      border-radius: 24px;
+      background: #dce2ff;
+      color: #121a36;
+    }
+    a {
+      color: #3055a6;
+    }
+    @media (prefers-color-scheme: dark) {
+      body {
+        background: #111318;
+        color: #e3e2e9;
+      }
+      .summary {
+        background: #26314f;
+        color: #dce2ff;
+      }
+      a {
+        color: #b4c5ff;
+      }
+    }
+  </style>
+</head>
+<body>
+<main>
+  <h1>BlinkSSH Privacy Policy</h1>
+  <p><strong>Effective date:</strong> 16 July 2026</p>
+
+  <p class="summary">
+    BlinkSSH has no account, advertising, or analytics. The developer does not
+    collect or sell your hosts, credentials, commands, terminal content, or
+    usage data.
+  </p>
+
+  <h2>Who is responsible</h2>
+  <p>
+    BlinkSSH is published by Andreas Alkstrand. For privacy questions or
+    requests, email
+    <a href="mailto:andreas.alkstrand@gmail.com">andreas.alkstrand@gmail.com</a>.
+  </p>
+
+  <h2>Data stored on your device</h2>
+  <p>BlinkSSH may store the following locally so its features work:</p>
+  <ul>
+    <li>Host names, addresses, ports, usernames, groups, SSH options, and connection preferences.</li>
+    <li>Known-host keys and trust decisions used to detect unexpected server key changes.</li>
+    <li>Saved passwords, protected using Android Keystore-backed encryption.</li>
+    <li>References to private key files that you choose. BlinkSSH does not upload those keys.</li>
+    <li>Terminal, theme, keyboard, clipboard, autocomplete, and accessibility preferences.</li>
+    <li>Command snippets and recent command history used for local autocomplete.</li>
+    <li>Optional on-device AI model files and their installation state.</li>
+  </ul>
+
+  <h2>Network connections</h2>
+  <p>
+    When you connect, BlinkSSH sends authentication data, commands, terminal
+    input, and related SSH traffic to the host, proxy, jump host, or forwarded
+    destination that you configured. SSH traffic is encrypted between your
+    device and the relevant SSH endpoint. Andreas Alkstrand does not operate
+    these endpoints and cannot read that traffic.
+  </p>
+  <p>
+    A connection test may resolve the host, open a TCP connection, negotiate
+    SSH, inspect the server host key, and check whether the configured
+    authentication can proceed. It does not run a shell command on the server.
+  </p>
+  <p>
+    If you choose an optional AI autocomplete model, Android downloads the model
+    over HTTPS from Hugging Face. Hugging Face may receive standard connection
+    information such as your IP address under its own privacy practices. The
+    model then runs locally; BlinkSSH does not send terminal context to an AI
+    service.
+  </p>
+
+  <h2>Clipboard and files</h2>
+  <p>
+    BlinkSSH accesses clipboard content when you explicitly copy or paste.
+    Remote clipboard writes using OSC 52 are disabled unless you enable them.
+    Files selected for SSH keys or imports are read only for the action you
+    request and are not sent to the developer.
+  </p>
+
+  <h2>Data collection and sharing</h2>
+  <p>
+    BlinkSSH does not include advertising, analytics, crash-reporting, or
+    developer telemetry services. The developer does not collect or share
+    personal data from the app. User-directed SSH transfers go only to the
+    destinations you choose.
+  </p>
+
+  <h2>Security, backup, and exports</h2>
+  <p>
+    Android app backup is disabled. Saved passwords are encrypted using keys
+    held by Android Keystore. BlinkSSH host-profile exports omit saved
+    passwords, private key material, and known-host trust records. No software
+    can guarantee absolute security, so protect exported files and your device.
+  </p>
+
+  <h2>Retention and deletion</h2>
+  <p>
+    Local data remains until you delete the relevant host, password, history,
+    model, or app data. Uninstalling BlinkSSH removes its private app data.
+    Files you deliberately exported remain wherever you saved or shared them
+    and must be deleted separately.
+  </p>
+
+  <h2>Children</h2>
+  <p>
+    BlinkSSH is a technical tool for managing computers and is not directed to
+    children under 13.
+  </p>
+
+  <h2>Changes</h2>
+  <p>
+    This policy may be updated when BlinkSSH's features or legal obligations
+    change. The effective date above identifies the current version.
+  </p>
+</main>
+</body>
+</html>
