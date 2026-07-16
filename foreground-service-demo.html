@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>BlinkSSH foreground service demonstration</title>
+    <meta
+      name="description"
+      content="A demonstration of BlinkSSH keeping a user-started SSH session active in the background."
+    >
+    <style>
+      :root {
+        color-scheme: dark;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        background: #101114;
+        color: #f1f1f5;
+      }
+
+      body {
+        margin: 0;
+        padding: 32px 20px 48px;
+      }
+
+      main {
+        width: min(100%, 760px);
+        margin: 0 auto;
+      }
+
+      h1 {
+        font-size: clamp(1.75rem, 4vw, 2.5rem);
+        line-height: 1.15;
+        margin: 0 0 12px;
+      }
+
+      p {
+        color: #c8c7ce;
+        line-height: 1.6;
+      }
+
+      video {
+        display: block;
+        width: min(100%, 420px);
+        max-height: 75vh;
+        margin: 28px auto;
+        border-radius: 24px;
+        background: #000;
+        box-shadow: 0 20px 60px rgb(0 0 0 / 45%);
+      }
+
+      a {
+        color: #9ad67a;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <h1>BlinkSSH foreground service demonstration</h1>
+      <p>
+        This recording shows a user opening an SSH session, leaving BlinkSSH,
+        confirming that the session remains active through a persistent
+        notification, and returning to the live terminal. The notification also
+        provides an <strong>Exit all</strong> action to end every active session.
+      </p>
+      <video controls playsinline preload="metadata">
+        <source src="foreground-service-demo.mp4" type="video/mp4">
+        Your browser does not support embedded video.
+      </video>
+      <p>
+        <a href="foreground-service-demo.mp4">Open the MP4 directly</a>
+        ·
+        <a href="./">BlinkSSH privacy policy</a>
+      </p>
+    </main>
+  </body>
+</html>
